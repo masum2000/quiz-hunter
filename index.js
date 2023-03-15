@@ -1,3 +1,13 @@
+// click Blog Button and go to the Blog Page
+function homeToBlog(){
+  window.location.href ='blog.html';
+}
+// click Home button and go to the Home page
+ function blogToHome(){
+  window.location.href ='index.html';
+}
+
+
 // global variable declaration
 let count = 0;
 let timer;

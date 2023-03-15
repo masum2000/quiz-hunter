@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Blog Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./index.js" defer></script>
+    
+
+    <!-- You don't need to change noChange.js file. It's fine -->
+    <script src="./noChange.js" defer></script>
+    <!-- You don't need to change noChange.js file. It's fine -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              common: ["Rubik", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white font-common">
+    <header class="h-16 flex items-center shadow-sm">
+        <nav class="flex justify-between items-center w-9/12 mx-auto">
+          <div class="text-zinc-800 font-bold uppercase">
+            <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+            <p class="text-[10px] font-normal capitalize -mt-1">
+              Get ready to Quiz and be amazed!
+            </p>
+          </div>
+          <button onclick="blogToHome()" class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white">Home</button>
+        </nav>
+      </header>
+
+      <main class="bg-secondary-subtle container  p-2 rounded-2">
+        <h1 class="text-center text-4xl text-green-500 mt-3">Welcome to My Blog Page</h1>
+        <div class="p-8">
+            <h3><b>Question-1:</b> What is DOM & What is the purpose of the DOM?</h3>
+            <p><b>Ans:</b>The objects that make up a web document's structure and content are represented as data by the Document Object Model (DOM).</p>
+            <p>The main purpose of DOM is a website document's elements can be added, changed, or removed using this programming interface. DOM manipulation is the process of adding, deleting, and changing webpage elements using JavaScript. In web development, it occurs frequently.</p><br>
+
+            <h3><b>Question-2:</b>How to select an element from DOM?</h3>
+            <p><b>Ans:</b> (i) getElementById:  search element by element_id.
+                <p>(ii)getElementsByTagName: search element by tag name (e.g., span, div)</p>
+                <p>(iii)getElementsByClassName:  search element by class name.</p>
+                <p>(iv)getElementsByName: search element by name attribute.</p>
+                </p><br>
+
+            <h3><b>Question-3:</b> What is an event bubble in Javascript?</h3>
+            <p><b>Ans:</b> The DOM has a concept known as event bubble. The event bubbles up to the element's parent and grandparent elements in the DOM tree until it reaches the root element once an element receives an event.</p><br>
+
+            <h3><b>Question-4:</b>What is a Callback Function & Wat is the use of  callback function ?</h3>
+            <p><b>Ans:</b> A JavaScript callback is a function that is to be run following the completion of another function. A callback function is any function that is supplied as an input to another function so that it can be used to execute that other function, according to a more rigorous definition.</p>
+            <p>The function of a callback is to run code in response to an event. Using callback, we can add wording at the end of each statement that says "run this code whenever the user touches a key on the keyboard." These events can be like mouse clicks.</p>
+        </div>
+    </main>
+
+
+  </body>
+</html>
