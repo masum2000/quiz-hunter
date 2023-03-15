@@ -18,8 +18,7 @@
     />
     <title>Blog Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./index.js" defer></script>
-    
+    <!-- <script src="./index.js" defer></script> -->
 
     <!-- You don't need to change noChange.js file. It's fine -->
     <script src="./noChange.js" defer></script>
@@ -38,41 +37,104 @@
     </script>
   </head>
   <body class="bg-white font-common">
-    <header class="h-16 flex items-center shadow-sm">
-        <nav class="flex justify-between items-center w-9/12 mx-auto">
-          <div class="text-zinc-800 font-bold uppercase">
-            <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
-            <p class="text-[10px] font-normal capitalize -mt-1">
-              Get ready to Quiz and be amazed!
-            </p>
-          </div>
-          <button onclick="blogToHome()" class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white">Home</button>
-        </nav>
-      </header>
+    <main class="bg-secondary-subtle container p-5 rounded-2">
+      <h1 class="text-center text-4xl text-green-500 mt-3">
+        Welcome to My Blog Page
+      </h1>
+      <div class="p-8">
+        <h3>
+          <b
+            >Question-1: What is the difference between map, filter, forEach and
+            find method in javaScript?</b
+          >
+        </h3>
+        <b>Ans:</b>
+        <p>
+          <b>(i)</b> The map() method creates a new array by calling a provided
+          function on each element in the original array. The new array will
+          have the same length as the original array, but the values will be
+          transformed by the function. It returns a new array without modifying
+          the original one.
+        </p>
+        <p>
+          <b>(ii)</b> The filter() method creates a new array with all elements
+          that pass the test implemented by the provided function. It returns a
+          new array without modifying the original one.
+        </p>
+        <p>
+          <b>(iii)</b> The forEach() method executes a provided function once
+          for each array element. It does not return a new array, and it does
+          not modify the original array.
+        </p>
+        <p>
+          <b>(iv)</b> The find() method returns the value of the first element
+          in the array that satisfies the provided testing function. If no
+          values satisfy the testing function, undefined is returned.
+        </p>
+        <br />
 
-      <main class="bg-secondary-subtle container  p-2 rounded-2">
-        <h1 class="text-center text-4xl text-green-500 mt-3">Welcome to My Blog Page</h1>
-        <div class="p-8">
-            <h3><b>Question-1:</b> What is DOM & What is the purpose of the DOM?</h3>
-            <p><b>Ans:</b>The objects that make up a web document's structure and content are represented as data by the Document Object Model (DOM).</p>
-            <p>The main purpose of DOM is a website document's elements can be added, changed, or removed using this programming interface. DOM manipulation is the process of adding, deleting, and changing webpage elements using JavaScript. In web development, it occurs frequently.</p><br>
+        <h3>
+          <b
+            >Question-2: What is the difference between local storage, session
+            storage and cookies?</b
+          >
+        </h3>
+        <b>Ans:</b>
+        <p>
+          <b>(i)</b> LocalStorage is a type of web storage that allows you to
+          store data in the user's browser permanently. This means that the data
+          will persist even after the browser is closed and reopened, and even
+          after the user's computer is turned off and on again. It's a great
+          option for storing data that needs to be persistent between sessions.
+        </p>
+        <p>
+          <b>(ii)</b> SessionStorage is similar to localStorage, but the data
+          stored in it is cleared when the browser is closed. This makes it a
+          good option for storing data that only needs to persist for a single
+          browsing session.
+        </p>
+        <p>
+          <b>(iii)</b> Cookies are small data files that are stored on the
+          user's computer by a website. They can be used to store data that
+          needs to persist between sessions, but they have some limitations.
+          Cookies have a size limit of 4KB, they can only store strings, and
+          they can be accessed by both the server and the client.
+        </p>
+        <br />
 
-            <h3><b>Question-2:</b>How to select an element from DOM?</h3>
-            <p><b>Ans:</b> (i) getElementById:  search element by element_id.
-                <p>(ii)getElementsByTagName: search element by tag name (e.g., span, div)</p>
-                <p>(iii)getElementsByClassName:  search element by class name.</p>
-                <p>(iv)getElementsByName: search element by name attribute.</p>
-                </p><br>
+        <h3><b>Question-3: What is event loop and how does it work in javaScript?</b></h3>
+        <p>
+          <b>Ans:</b> The event loop is a JavaScript mechanism that enables asynchronous actions to be done without interrupting the primary execution stream. It is in charge of duties like handling human input, sending network requests, and performing callbacks. This is how it works:
+        </p>
+        <p>
+           <b>(i)</b> When code is run, it is put to the call stack. This is a data structure  that keeps track of function calls in the sequence they are received.
+          </p>
+          <p>
+            <b>(ii)</b> A method is moved to the Web APIs if it performs an asynchronous action, such as a network request. The browser provides these Tools, such as setTimeout and retrieve, and they are not part of the JavaScript language.
+          </p>
+          <p>
+            <b>(iii)</b> If there is a pending callback function, the event loop moves it from the task queue to the call stack, where it's executed. but,If there are no pending callback functions, the event loop waits for new ones to be added.
+          </p>
+        <br />
 
-            <h3><b>Question-3:</b> What is an event bubble in Javascript?</h3>
-            <p><b>Ans:</b> The DOM has a concept known as event bubble. The event bubbles up to the element's parent and grandparent elements in the DOM tree until it reaches the root element once an element receives an event.</p><br>
-
-            <h3><b>Question-4:</b>What is a Callback Function & Wat is the use of  callback function ?</h3>
-            <p><b>Ans:</b> A JavaScript callback is a function that is to be run following the completion of another function. A callback function is any function that is supplied as an input to another function so that it can be used to execute that other function, according to a more rigorous definition.</p>
-            <p>The function of a callback is to run code in response to an event. Using callback, we can add wording at the end of each statement that says "run this code whenever the user touches a key on the keyboard." These events can be like mouse clicks.</p>
-        </div>
+        <h3>
+          <b>Question-4:</b>What is a Callback Function & Wat is the use of
+          callback function ?
+        </h3>
+        <p>
+          <b>Ans:</b> A JavaScript callback is a function that is to be run
+          following the completion of another function. A callback function is
+          any function that is supplied as an input to another function so that
+          it can be used to execute that other function, according to a more
+          rigorous definition.
+        </p>
+        <p>
+          The function of a callback is to run code in response to an event.
+          Using callback, we can add wording at the end of each statement that
+          says "run this code whenever the user touches a key on the keyboard."
+          These events can be like mouse clicks.
+        </p>
+      </div>
     </main>
-
-
   </body>
 </html>

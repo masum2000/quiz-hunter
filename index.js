@@ -1,10 +1,6 @@
 // click Blog Button and go to the Blog Page
 function homeToBlog(){
-  window.location.href ='blog.html';
-}
-// click Home button and go to the Home page
- function blogToHome(){
-  window.location.href ='index.html';
+  window.open ('blog.html');
 }
 
 
@@ -50,7 +46,7 @@ startQuiz.addEventListener("click", () => {
     }
     counter.innerText = counterNum;
     counterNum--;
-  }, 100);
+  }, 1000);
 });
 
 // All quiz data fetched from json
