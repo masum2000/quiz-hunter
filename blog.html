@@ -37,11 +37,11 @@
     </script>
   </head>
   <body class="bg-white font-common">
-    <main class="bg-secondary-subtle container p-5 rounded-2">
+    <main class=" p-5 rounded-2">
       <h1 class="text-center text-4xl text-green-500 mt-3">
         Welcome to My Blog Page
       </h1>
-      <div class="p-8">
+      <div class=" p-5">
         <h3>
           <b
             >Question-1: What is the difference between map, filter, forEach and
@@ -118,22 +118,26 @@
         <br />
 
         <h3>
-          <b>Question-4:</b>What is a Callback Function & Wat is the use of
-          callback function ?
+          <b>Question-4: How does work quizTimer Function?</b>
         </h3>
         <p>
-          <b>Ans:</b> A JavaScript callback is a function that is to be run
-          following the completion of another function. A callback function is
-          any function that is supplied as an input to another function so that
-          it can be used to execute that other function, according to a more
-          rigorous definition.
+          <b>Ans:</b> The quizTimer function is a timer function that accepts a boolean reject argument and, if true, terminates the timer. If the dismiss argument is set to true, the method uses clearInterval to clear the interval and returns instantly. If the dismiss argument is false or is not specified, the method uses setInterval to construct an interval that calls a callback code every 1000 milliseconds.
         </p>
         <p>
           The function of a callback is to run code in response to an event.
           Using callback, we can add wording at the end of each statement that
           says "run this code whenever the user touches a key on the keyboard."
-          These events can be like mouse clicks.
-        </p>
+          These events can be like mouse clicks.It selects an HTML element with the ID count using document.querySelector.
+          It converts the count variable to minutes and seconds format then it updates the innerHTML of the selected HTML element with the formatted time and adds a subscript "sec".
+          then it increments the count variable by 1. then if the count is greater than 60, it alternates the text color of the countHtml element between red-300 and red-700 based on the value of the count variable.</p><br>
+
+          <h3>
+            <b>Question-4: How does work ChooseQuiz Function?</b>
+          </h3>
+          <p>
+            <b>Ans:</b> The chooseQuiz function accepts two parameters, index and givenAns, which indicate the quiz number and the provided response, respectively.
+            Using the find technique, the code first determines whether the question already appears in the responses array. If it exists, it cycles through the responses array and substitutes the old question with the new one, which includes the provided answer. If it does not exist, it uses the push technique to add the new question with the provided response to the answers collection.The function uses the displayAnswers function after updating the answers array and passing the answers array as an input.Overall, the chooseQuiz method enables the user to select a question and save the provided response in the answers collection. If the quiz already appears in the array, it updates the provided response; otherwise, the new quiz and given answer are added to the array.
+          </p>
       </div>
     </main>
   </body>
